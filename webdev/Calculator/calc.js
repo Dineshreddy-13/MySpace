@@ -2,7 +2,7 @@ const hello = document.getElementById("hello");
 const result = document.getElementById("result");
 // const temp = document.getElementById("hello");
 var i = 0; 
-var temp = ""
+var temp = "";
 function show(input){
   if (input == "()" && i%2 == 0 ){
     input = "(";
