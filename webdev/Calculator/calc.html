@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css" />
+    <script
+      src="https://kit.fontawesome.com/f94a68dd11.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="cont"> 
+      <div class="calc">
+        <div class="screen" style="text-align: right">
+          <div><input id="hello" type="text" readonly /></div>
+          <div><h2 id="result"></h2></div>
+        </div>
+
+        <div class="options">
+          <div>
+            <div id="icons"><i class="fa-regular fa-clock"></i></div>
+            <div id="icons"><i class="fa-solid fa-ruler-horizontal"></i></div>
+            <div id="icons"><i class="fa-solid fa-calculator"></i></div>
+          </div>
+          <div>
+            <button id="icon-btn" onclick="sliceoff()">
+              <i
+                class="fa-solid fa-delete-left"
+                style="color: rgb(7, 250, 7)"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <hr />
+        <div class="btns-box">
+          <div class="btns1">
+            <button onclick="cleardisplay()">
+              <span style="color: rgb(255, 0, 0); font-size: 30 px">C</span>
+            </button>
+            <button onclick="show('()')"><span>( )</span></button>
+            <button onclick="show(' % ')"><span>%</span></button>
+            <button onclick="show('/')"><span>&divide;</span></button>
+          </div>
+          <div class="btns">
+            <button onclick="show('7')"><span>7</span></button>
+            <button onclick="show('8')"><span>8</span></button>
+            <button onclick="show('9')"><span>9</span></button>
+            <button onclick="show('*')">
+              <span style="color: rgb(7, 250, 7)">&times;</span>
+            </button>
+          </div>
+          <div class="btns">
+            <button onclick="show('4')"><span>4</span></button>
+            <button onclick="show('5')"><span>5</span></button>
+            <button onclick="show('6')"><span>6</span></button>
+            <button onclick="show('-')">
+              <span style="color: rgb(7, 250, 7)">&minus;</span>
+            </button>
+          </div>
+          <div class="btns">
+            <button onclick="show('1')"><span>1</span></button>
+            <button onclick="show('2')"><span>2</span></button>
+            <button onclick="show('3')"><span>3</span></button>
+            <button onclick="show('+')">
+              <span style="color: rgb(7, 250, 7);">+</span>
+            </button>
+          </div>
+
+          <div class="btns">
+            <button onclick="show('+/-')"><span>+/-</span></button>
+            <button onclick="show('0')"><span>0</span></button>
+            <button onclick="show('.')"><span>.</span></button>
+            <button
+              onclick="calculate()"
+              style="background-color: rgba(68, 255, 0, 0.7)"
+            >
+              <span>=</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="calc.js"></script>
+  </body>
+</html>

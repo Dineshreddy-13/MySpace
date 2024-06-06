@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.clock{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: 5px solid rgb(132, 132, 132);
+    display: flex;
+    background-image: url(kakashi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -115px  10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.clock span{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 12px;
+    text-align: center; 
+}
+
+.clock span b{
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+    font-size: 20px;
+   
+}
+
+.clock::before{
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+}
+
+.hand i{
+    position: absolute;
+    /* height: 70px;
+    width: 3px; */
+    background-color: aqua;
+    border-radius: 8px;
+}
+.hand{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.dig{
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+.digital{
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,75%);
+    border: 2px solid rgb(132, 132, 132);
+    z-index: -1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* rgb(76, 73, 73) */
+/* rgb(125, 126, 127) */
